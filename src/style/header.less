@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@clr-black: #000;
+@clr-white: #fff;
+@clr-gray: #999;
+.font {
+  font-family: "DM Sans", sans-serif;
+}
+header {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-block: 20px;
+  section {
+    display: flex;
+    color: @clr-black;
+    img {
+      width: 30px;
+      margin-right: 5px;
+    }
+    h1 {
+      margin-block: 2px;
+    }
+  }
+  i {
+    font-size: 25px;
+    margin-block: 2px;
+  }
+  nav {
+    margin-top: 33px;
+    position: absolute;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background: @clr-white;
+    padding: 10px 5px;
+    ul {
+      list-style: none;
+      margin: 25px 0px 20px 0px;
+      li {
+        text-align: center;
+        margin-block: 15px;
+      }
+    }
+    hr {
+      width: 80%;
+      margin: 0 auto;
+      border: 0.5px solid @clr-black;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 15px;
+      width: 150px;
+      background: @clr-black;
+      color: @clr-white;
+      border: none;
+      margin: 0 auto;
+    }
+    button:checked {
+      background: #999;
+      color: @clr-black;
+    }
+  }
+}
+.display-None{
+  display: none;
+}
+
+main {
+  section {
+    picture {
+      img {
+        width: 100%;
+      }
+    }
+    div {
+      padding: 60px 20px;
+      h2 {
+        font-size: 2rem;
+        line-height: 40px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 30px;
+        margin-bottom: 20px;
+        color: @clr-gray;
+      }
+      a {
+        text-decoration: none;
+        font-size: 1rem;
+        i {
+          margin-left: 6px;
+        }
+      }
+      a:active {
+        text-decoration: uppercase;
+      }
+    }
+  }
+  .create {
+    background: @clr-black;
+    &-content {
+      color: @clr-white;
+    }
+    a {
+      color: @clr-white;
+    }
+  }
+  .stories {
+    a {
+      color: @clr-black;
+    }
+  }
+  .designed {
+    a {
+      color: @clr-black;
+    }
+  }
+}
+
+//https://nhhlan.github.io/photosnap/#

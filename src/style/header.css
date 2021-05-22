@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.font {
+  font-family: "DM Sans", sans-serif;
+}
+header {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-block: 20px;
+}
+header section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #000;
+}
+header section img {
+  width: 30px;
+  margin-right: 5px;
+}
+header section h1 {
+  margin-block: 2px;
+}
+header i {
+  font-size: 25px;
+  margin-block: 2px;
+}
+header nav {
+  margin-top: 33px;
+  position: absolute;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #fff;
+  padding: 10px 5px;
+}
+header nav ul {
+  list-style: none;
+  margin: 25px 0px 20px 0px;
+}
+header nav ul li {
+  text-align: center;
+  margin-block: 15px;
+}
+header nav hr {
+  width: 80%;
+  margin: 0 auto;
+  border: 0.5px solid #000;
+  margin-bottom: 10px;
+}
+header nav button {
+  padding: 15px;
+  width: 150px;
+  background: #000;
+  color: #fff;
+  border: none;
+  margin: 0 auto;
+}
+header nav button:checked {
+  background: #999;
+  color: #000;
+}
+.display-None {
+  display: none;
+}
+main section picture img {
+  width: 100%;
+}
+main section div {
+  padding: 60px 20px;
+}
+main section div h2 {
+  font-size: 2rem;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+main section div p {
+  font-size: 1rem;
+  line-height: 30px;
+  margin-bottom: 20px;
+  color: #999;
+}
+main section div a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+main section div a i {
+  margin-left: 6px;
+}
+main section div a:active {
+  -webkit-text-decoration: uppercase;
+          text-decoration: uppercase;
+}
+main .create {
+  background: #000;
+}
+main .create-content {
+  color: #fff;
+}
+main .create a {
+  color: #fff;
+}
+main .stories a {
+  color: #000;
+}
+main .designed a {
+  color: #000;
+}

@@ -1,0 +1,57 @@
+@import url(header.less);
+@import url(main.less);
+@import url(footer.less);
+@media (max-width: 768px) {
+  main {
+    .card {
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+  }
+}
+@media (min-width: 768px) {
+  main {
+    .card {
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .info-infinity{
+    margin-top: 36px;
+  }
+  .create,
+  .designed{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    picture{
+      grid-area: 1 e("/") 2;
+      display: flex;
+      align-items: center;
+    }
+    div{
+      width: 300px;
+      align-self: center;
+      justify-self: center;
+    }
+  }
+  .stories{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    div{
+      width: 300px;
+      align-self: center;
+      justify-self: center;
+    }
+    picture{
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+@media (min-width: 960px) {
+  main {
+    .card {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr ;
+    }
+  }
+}

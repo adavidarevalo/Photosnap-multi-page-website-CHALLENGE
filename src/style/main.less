@@ -1,0 +1,90 @@
+@clr-black: #000;
+@clr-white: #fff;
+@clr-gray: #999;
+
+main {
+  overflow-x: hidden;
+  .card {
+    padding: 0;
+    display: grid;
+    .mountain-card {
+      background-image: url(https://cdn.britannica.com/s:690x388,c:crop/67/19367-050-885866B4/Valley-Taurus-Mountains-Turkey.jpg);
+      transition: all .5s;
+    }
+    .sunset-card {
+      background-image: url(https://joyvacationsclub.com/wp-content/uploads/2019/07/NY.jpg);
+      transition: all .5s;
+    }
+    .person-card {
+      background-image: url(https://wallpapercave.com/wp/wp1933849.jpg);
+      transition: all .5s;
+    }
+    .architecture-card {
+      background-image: url(https://wallpaperaccess.com/full/153244.jpg);
+      transition: all .5s;
+    }
+    .mountain-card:hover,
+    .sunset-card:hover,
+    .person-card:hover,
+    .architecture-card:hover{
+      transform: scale(1.1);
+    }
+    div {
+      height: auto;
+      max-height: 240px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-color: rgba(0, 0, 0, 0.2);
+      .container-card {
+        padding-top: 170px;
+        padding-bottom: 0;
+        height: auto;
+        color: @clr-white;
+        h3 {
+          font-size: 1.25rem;
+        }
+        p {
+          font-size: 1rem;
+          margin-bottom: 0;
+          color: @clr-white;
+        }
+        hr {
+          border: 0.3px solid @clr-white;
+          margin-bottom: 10px;
+          margin-top: 10px;
+        }
+        a {
+          color: @clr-white;
+          font-size: 1.2rem;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+  .info {
+    width: 90%;
+    margin: 0 auto;
+    margin-block: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 3000px;
+    div {
+      max-width: 300px;
+      text-align: center;
+      margin-inline: 25px;
+      img {
+        margin-bottom: 50px;
+      }
+      h3 {
+        margin-bottom: 20px;
+      }
+      p {
+        color: @clr-black;
+        line-height: 20px;
+      }
+    }
+  }
+}
