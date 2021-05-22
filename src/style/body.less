@@ -55,3 +55,43 @@
     }
   }
 }
+//Change the nav
+@media(min-width:767px){
+  .fa-bars{
+    display: none;
+  }
+  .display-None{
+    display: flex;
+  }
+  header{
+    display: grid;
+    grid-template-columns: .5fr 1.5fr;
+    gap: 50px;
+    .header-icom{
+      margin-top: 8px;
+    }
+    nav{
+      flex-direction: row;
+      position: inherit;
+      margin-top: 0px;
+      padding: 0;
+      justify-content: flex-end;
+      ul{
+        display: flex;
+        margin: 0;
+        li{
+          margin-inline: 10px;
+        }
+      }
+      hr{
+        display:none;
+      }
+      button{
+        margin: 0px;
+        height: auto;
+        margin-left: 80px;
+      }
+    }
+  }
+}
+//https://nhhlan.github.io/photosnap/#

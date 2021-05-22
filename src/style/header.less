@@ -1,12 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
-}
 @clr-black: #000;
 @clr-white: #fff;
 @clr-gray: #999;
 .font {
   font-family: "DM Sans", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  .font;
 }
 header {
   width: 90%;
@@ -19,6 +20,7 @@ header {
     color: @clr-black;
     img {
       width: 30px;
+      height: 30px;
       margin-right: 5px;
     }
     h1 {
@@ -69,57 +71,6 @@ header {
   display: none;
 }
 
-main {
-  section {
-    picture {
-      img {
-        width: 100%;
-      }
-    }
-    div {
-      padding: 60px 20px;
-      h2 {
-        font-size: 2rem;
-        line-height: 40px;
-        margin-bottom: 20px;
-      }
-      p {
-        font-size: 1rem;
-        line-height: 30px;
-        margin-bottom: 20px;
-        color: @clr-gray;
-      }
-      a {
-        text-decoration: none;
-        font-size: 1rem;
-        i {
-          margin-left: 6px;
-        }
-      }
-      a:active {
-        text-decoration: uppercase;
-      }
-    }
-  }
-  .create {
-    background: @clr-black;
-    &-content {
-      color: @clr-white;
-    }
-    a {
-      color: @clr-white;
-    }
-  }
-  .stories {
-    a {
-      color: @clr-black;
-    }
-  }
-  .designed {
-    a {
-      color: @clr-black;
-    }
-  }
-}
+
 
 //https://nhhlan.github.io/photosnap/#

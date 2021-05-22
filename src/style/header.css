@@ -1,8 +1,9 @@
+.font {
+  font-family: "DM Sans", sans-serif;
+}
 * {
   margin: 0;
   padding: 0;
-}
-.font {
   font-family: "DM Sans", sans-serif;
 }
 header {
@@ -24,6 +25,7 @@ header section {
 }
 header section img {
   width: 30px;
+  height: 30px;
   margin-right: 5px;
 }
 header section h1 {
@@ -75,47 +77,4 @@ header nav button:checked {
 }
 .display-None {
   display: none;
-}
-main section picture img {
-  width: 100%;
-}
-main section div {
-  padding: 60px 20px;
-}
-main section div h2 {
-  font-size: 2rem;
-  line-height: 40px;
-  margin-bottom: 20px;
-}
-main section div p {
-  font-size: 1rem;
-  line-height: 30px;
-  margin-bottom: 20px;
-  color: #999;
-}
-main section div a {
-  text-decoration: none;
-  font-size: 1rem;
-}
-main section div a i {
-  margin-left: 6px;
-}
-main section div a:active {
-  -webkit-text-decoration: uppercase;
-          text-decoration: uppercase;
-}
-main .create {
-  background: #000;
-}
-main .create-content {
-  color: #fff;
-}
-main .create a {
-  color: #fff;
-}
-main .stories a {
-  color: #000;
-}
-main .designed a {
-  color: #000;
 }

@@ -1,8 +1,9 @@
+.font {
+  font-family: "DM Sans", sans-serif;
+}
 * {
   margin: 0;
   padding: 0;
-}
-.font {
   font-family: "DM Sans", sans-serif;
 }
 header {
@@ -24,6 +25,7 @@ header section {
 }
 header section img {
   width: 30px;
+  height: 30px;
   margin-right: 5px;
 }
 header section h1 {
@@ -411,5 +413,54 @@ footer .footer-copy p {
   main .card > *:nth-child(4) {
     -ms-grid-row: 1;
     -ms-grid-column: 4;
+  }
+}
+@media (min-width: 767px) {
+  .fa-bars {
+    display: none;
+  }
+  .display-None {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.5fr 50px 1.5fr;
+    grid-template-columns: 0.5fr 1.5fr;
+    gap: 50px;
+  }
+  header .header-icom {
+    margin-top: 8px;
+  }
+  header nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: inherit;
+    margin-top: 0px;
+    padding: 0;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  header nav ul li {
+    margin-inline: 10px;
+  }
+  header nav hr {
+    display: none;
+  }
+  header nav button {
+    margin: 0px;
+    height: auto;
+    margin-left: 80px;
   }
 }
