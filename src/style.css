@@ -56,6 +56,11 @@ header nav ul {
 header nav ul li {
   text-align: center;
   margin-block: 15px;
+  cursor: pointer;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #000;
 }
 header nav hr {
   width: 80%;
@@ -70,6 +75,7 @@ header nav button {
   color: #fff;
   border: none;
   margin: 0 auto;
+  cursor: pointer;
 }
 header nav button:checked {
   background: #999;
