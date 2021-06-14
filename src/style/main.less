@@ -69,13 +69,13 @@ main {
     }
     .architecture-card {
       background-image: url(https://wallpaperaccess.com/full/153244.jpg);
-      transition: all .5s;
+      transition: all 1s;
     }
     .mountain-card:hover,
     .sunset-card:hover,
     .person-card:hover,
     .architecture-card:hover{
-      transform: scale(1.1);
+      animation:jump .5s linear forwards;
     }
     div {
       height: auto;
@@ -134,5 +134,13 @@ main {
         line-height: 20px;
       }
     }
+  }
+}
+@keyframes jump {
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-20px);
   }
 }

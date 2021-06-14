@@ -152,15 +152,15 @@ main .card .person-card {
 }
 main .card .architecture-card {
   background-image: url(https://wallpaperaccess.com/full/153244.jpg);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 main .card .mountain-card:hover,
 main .card .sunset-card:hover,
 main .card .person-card:hover,
 main .card .architecture-card:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-animation: jump 0.5s linear forwards;
+          animation: jump 0.5s linear forwards;
 }
 main .card div {
   height: auto;
@@ -227,6 +227,26 @@ main .info div h3 {
 main .info div p {
   color: #000;
   line-height: 20px;
+}
+@-webkit-keyframes jump {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+@keyframes jump {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
 }
 footer {
   background: #000;

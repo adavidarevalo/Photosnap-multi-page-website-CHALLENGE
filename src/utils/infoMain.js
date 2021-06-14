@@ -39,12 +39,20 @@ class infoMain extends HTMLElement {
       }
         section{
           display:grid;
-          grid-template-columns: auto auto;
-          grid-template-rows: auto;
           background: var(--clr--black);
+        }
+        section picture{
+          grid-area: 1 / 2;
+          align-items: center;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          box-sizing: border-box;
+          max-width:100%;
         }
         img{
           width:100%;
+          box-sizing: border-box;
         }
         div{
           padding: 60px 20px;
