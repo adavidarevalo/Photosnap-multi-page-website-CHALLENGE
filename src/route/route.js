@@ -5,7 +5,7 @@ import features from "../page/features"
 const mainContain = document.querySelector("#mainContent") 
 
 const route = async(name) =>{
-  mainContain.innerHTML= await home;
+  mainContain.innerHTML= await galery;
   
 }
 export default route;

@@ -38,11 +38,10 @@ class infoMain extends HTMLElement {
         --clr--black:#000;
       }
         section{
-          display:grid;
+          display:block;
           background: var(--clr--black);
         }
         section picture{
-          grid-area: 1 / 2;
           align-items: center;
           display:flex;
           justify-content: center;
@@ -52,6 +51,8 @@ class infoMain extends HTMLElement {
         }
         img{
           width:100%;
+          max-width: 900px;
+          max-height: 410px;
           box-sizing: border-box;
         }
         div{
@@ -67,6 +68,25 @@ class infoMain extends HTMLElement {
           font-size: 1rem;
           line-height: 30px;
           margin-bottom: 20px;
+        }
+        @media(min-width: 768px){
+          section{
+            max-height:410px;
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            }
+          section picture{
+            grid-area: 1 / 2;
+            display: flex;
+            align-items: center;
+           }
+          div{
+          margin:0 auto;
+          width: 70%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          }
         }
       </style>
     `;

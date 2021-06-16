@@ -112,6 +112,12 @@ main section div a:active {
   -webkit-text-decoration: uppercase;
           text-decoration: uppercase;
 }
+main .galery--content__img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 main .create {
   background: #000;
 }
@@ -126,9 +132,6 @@ main .stories a {
 }
 main .designed a {
   color: #000;
-}
-main {
-  overflow-x: hidden;
 }
 main .card {
   padding: 0;
