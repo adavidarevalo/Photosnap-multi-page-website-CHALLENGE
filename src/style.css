@@ -112,6 +112,145 @@ main section div a:active {
   -webkit-text-decoration: uppercase;
           text-decoration: uppercase;
 }
+main .pricing--table {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+main .pricing--table h2 {
+  font-size: 3rem;
+}
+main .pricing--table div {
+  text-align: left;
+  padding: 0px;
+}
+main .pricing--table div h2 {
+  font-size: 1.1rem;
+  margin: 0px;
+}
+main .pricing--table div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+}
+main .pricing--table div div .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60px;
+  border-bottom: none;
+}
+main .pricing--table div div .content svg {
+  width: 20px;
+}
+main .pricing--cards__pay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-block: 60px;
+}
+main .pricing--cards__pay div {
+  width: 100%;
+  height: 240px;
+  max-width: 280px;
+  background-color: rgba(223, 223, 223, 0.5);
+  text-align: center;
+}
+main .pricing--cards__pay div h2 {
+  font-size: 1.5rem;
+}
+main .pricing--cards__pay div p {
+  font-size: 1.1rem;
+  line-height: 20px;
+}
+main .pricing--cards__pay div .cost {
+  font-size: 3rem;
+  color: #000;
+}
+main .pricing--cards__pay div button {
+  margin-top: 20px;
+  letter-spacing: 2px;
+  background: #000;
+  color: #fff;
+  padding: 10px 50px;
+  border: none;
+}
+main .pricing--cards__pay div button:hover,
+main .pricing--cards__pay div button:active {
+  background-color: rgba(189, 188, 188, 0.5);
+  color: #000;
+}
+main .pricing--cards__pay .pricing--card__pro {
+  background: #000;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+main .pricing--cards__pay .pricing--card__pro h2 {
+  color: #fff;
+}
+main .pricing--cards__pay .pricing--card__pro .cost {
+  color: #fff;
+}
+main .pricing--cards__pay .pricing--card__pro button {
+  background-color: #fff;
+  color: #000;
+}
+main .features--service__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .galery--main {
+  position: relative;
+  height: 100%;
+  display: block;
+  background: #000;
+}
+main .galery--main img {
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+}
+main .galery--main div {
+  color: #fff;
+  position: absolute;
+  top: 0px;
+  width: auto;
+  max-width: 500px;
+  padding-left: 5%;
+}
+main .galery--main div h2 {
+  text-transform: uppercase;
+}
+main .galery--main div p {
+  color: #fff;
+}
 main .galery--content__img {
   display: -ms-grid;
   display: grid;
@@ -251,6 +390,34 @@ main .info div p {
             transform: translateY(-20px);
   }
 }
+@media (max-width: 790px) {
+  main .galery--main {
+    position: relative;
+    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 360px 1fr;
+    grid-template-rows: 360px 1fr;
+  }
+  main .galery--main img {
+    width: 100%;
+    height: 350px;
+  }
+  main .galery--main div {
+    position: relative;
+    padding: 10px;
+  }
+  main .galery--content__img {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 400px) {
+  main .galery--content__img {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
 footer {
   background: #000;
   height: auto;
@@ -261,9 +428,8 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

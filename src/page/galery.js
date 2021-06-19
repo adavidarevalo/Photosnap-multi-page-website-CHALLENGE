@@ -12,7 +12,8 @@ const galery = async() =>{
   }
   console.log(galeryImg)
   const view = `
-  <section class="galery--principal">
+  <section class="galery--main">
+  <img src="https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxNDI1NDAyfHxlbnwwfHx8fA%3D%3D&w=1000&q=80">
   <div>
     <p>Last month´s featured story</p>
     <h2>Hazy full moon of appalachia</h2>
