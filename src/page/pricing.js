@@ -3,31 +3,38 @@ import "../utils/infoMain"
 const pricing = () =>{
     const view = `
     <info-main img="https://www.freejpg.com.ar/asset/900/3a/3a48/F100008111.jpg" title="PRICING" paragraphContent="Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos."></info-main>
+    <section class="container--main__switch switch">
+      <p class="Monthly">Monthly</p>
+      <div class="container-switch switch">
+        <div class="inner-circle switch"></div>
+      </div>
+      <p class="Yearly">Yearly</p>
+    </section>
     <section class="pricing--cards__pay">
       <div>
         <h2>BASIC</h2>
         <p>Includes basic usage of our platform. Recommended for new and aspiring photographers.</p>
-        <p class="cost" id="pricing--cads__const">$<span> 123</span></p>
+        <p class="cost">$<span id="pricing--const__Basic"> 19.00</span></p>
         <p>per month</p>
         <button>PICK PLAN</button>
       </div>
       <div class="pricing--card__pro">
         <h2>PRO</h2>
         <p>More advanced features available. Recommended for photography veterans and professionals.</p>
-        <p class="cost" id="pricing--cads__const">$<span> 123</span></p>
+        <p class="cost">$<span id="pricing--const__Pro"> 39.00</span></p>
         <p>per month</p>
         <button>PICK PLAN</button>
       </div>
       <div>
         <h2>Business</h2>
         <p>Additional features available such as more detailed metrics. Recommended for business owners.</p>
-        <p class="cost" id="pricing--cads__const">$<span> 123</span></p>
+        <p class="cost">$<span id="pricing--const__Business"> 99.00</span></p>
         <p>per month</p>
         <button>PICK PLAN</button>
       </div>
     </section>
     <section class="pricing--table">
-      <h2>COMPRARE</h2>
+      <h2 class="pricing--title">COMPRARE</h2>
       <div>
         <h2>THE FEATURES</h2>
       </div>

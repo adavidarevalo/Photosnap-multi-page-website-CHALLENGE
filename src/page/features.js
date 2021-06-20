@@ -14,7 +14,7 @@ const features = () =>{
   </section>
   <invite-banner></invite-banner>
   `
-  return view
+  return view;
 }
 
 export default features();

@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "DM Sans";
+  src: url("../assets/fonts/dm-sans-v6-latin-regular.woff2") format("woff2"), url("../assets/fonts/dm-sans-v6-latin-regular.woff") format("woff");
+  font-style: normal;
+}
 .font {
   font-family: "DM Sans", sans-serif;
 }
@@ -16,6 +21,8 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-block: 20px;
+  -webkit-animation: slideInDown 1s both;
+          animation: slideInDown 1s both;
 }
 header section {
   display: -webkit-box;
@@ -62,6 +69,11 @@ header nav ul li a {
   text-decoration: none;
   color: #000;
 }
+header nav ul li a:hover,
+header nav ul li a:active {
+  text-decoration: underline;
+  color: #c3c2c2;
+}
 header nav hr {
   width: 80%;
   margin: 0 auto;
@@ -77,10 +89,33 @@ header nav button {
   margin: 0 auto;
   cursor: pointer;
 }
-header nav button:checked {
-  background: #999;
+header nav button:active,
+header nav button:hover {
+  background: #d8d7d7;
   color: #000;
 }
 .display-None {
   display: none;
+}
+@-webkit-keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }

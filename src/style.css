@@ -16,6 +16,8 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-block: 20px;
+  -webkit-animation: slideInDown 1s both;
+          animation: slideInDown 1s both;
 }
 header section {
   display: -webkit-box;
@@ -62,6 +64,11 @@ header nav ul li a {
   text-decoration: none;
   color: #000;
 }
+header nav ul li a:hover,
+header nav ul li a:active {
+  text-decoration: underline;
+  color: #c3c2c2;
+}
 header nav hr {
   width: 80%;
   margin: 0 auto;
@@ -77,15 +84,40 @@ header nav button {
   margin: 0 auto;
   cursor: pointer;
 }
-header nav button:checked {
-  background: #999;
+header nav button:active,
+header nav button:hover {
+  background: #d8d7d7;
   color: #000;
 }
 .display-None {
   display: none;
 }
+@-webkit-keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 main section picture img {
   width: 100%;
+  -webkit-animation: slideInRight 1s both;
+          animation: slideInRight 1s both;
 }
 main section div {
   padding: 60px 20px;
@@ -104,9 +136,20 @@ main section div p {
 main section div a {
   text-decoration: none;
   font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-main section div a i {
-  margin-left: 6px;
+main section div a svg {
+  color: #fff;
+  width: 15px;
+  margin-inline: 7px;
+}
+main section div a .dark-arrow {
+  color: #000;
 }
 main section div a:active {
   -webkit-text-decoration: uppercase;
@@ -118,8 +161,10 @@ main .pricing--table {
   margin: 0 auto;
   margin-bottom: 50px;
 }
-main .pricing--table h2 {
-  font-size: 3rem;
+main .pricing--table .pricing--title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 25px;
 }
 main .pricing--table div {
   text-align: left;
@@ -156,6 +201,48 @@ main .pricing--table div div .content {
 main .pricing--table div div .content svg {
   width: 20px;
 }
+main .container--main__switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 50px;
+  min-width: 200px;
+}
+main .gray {
+  color: gray;
+}
+main .container-switch {
+  display: inline-block;
+  width: 60px;
+  height: 2rem;
+  background-color: #DFDFDF;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  padding: 0px;
+}
+main .inner-circle {
+  width: 30px;
+  height: 30px;
+  background: #000;
+  border-radius: 50%;
+  padding: 0px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+main .active {
+  -webkit-transform: translateX(33px);
+          transform: translateX(33px);
+}
 main .pricing--cards__pay {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -169,10 +256,11 @@ main .pricing--cards__pay {
 }
 main .pricing--cards__pay div {
   width: 100%;
-  height: 240px;
+  height: auto;
   max-width: 280px;
   background-color: rgba(223, 223, 223, 0.5);
   text-align: center;
+  margin: 25px;
 }
 main .pricing--cards__pay div h2 {
   font-size: 1.5rem;
@@ -266,11 +354,26 @@ main .create-content {
 main .create a {
   color: #fff;
 }
+main .create a:active,
+main .create a:hover {
+  text-decoration: underline;
+  color: #c3c2c2;
+}
 main .stories a {
   color: #000;
 }
+main .stories a:active,
+main .stories a:hover {
+  text-decoration: underline;
+  color: #7e7e7e;
+}
 main .designed a {
   color: #000;
+}
+main .designed a:active,
+main .designed a:hover {
+  text-decoration: underline;
+  color: #7e7e7e;
 }
 main .card {
   padding: 0;
@@ -278,22 +381,22 @@ main .card {
   display: grid;
 }
 main .card .mountain-card {
-  background-image: url(https://cdn.britannica.com/s:690x388,c:crop/67/19367-050-885866B4/Valley-Taurus-Mountains-Turkey.jpg);
+  background-image: url(https://i.ibb.co/wW5xXFg/mountain-1.jpg);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 main .card .sunset-card {
-  background-image: url(https://joyvacationsclub.com/wp-content/uploads/2019/07/NY.jpg);
+  background-image: url(https://i.ibb.co/VmJwqSh/city-2-2.jpg);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 main .card .person-card {
-  background-image: url(https://wallpapercave.com/wp/wp1933849.jpg);
+  background-image: url(https://i.ibb.co/z8QFbWM/person-3.jpg);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 main .card .architecture-card {
-  background-image: url(https://wallpaperaccess.com/full/153244.jpg);
+  background-image: url(https://i.ibb.co/vZ5kkzn/structure-4.jpg);
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -418,6 +521,28 @@ main .info div p {
     grid-template-columns: 1fr;
   }
 }
+@-webkit-keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
 footer {
   background: #000;
   height: auto;
@@ -456,11 +581,18 @@ footer .footer-social img {
 }
 footer .footer-social .footer-media {
   margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-footer .footer-social .footer-media i {
+footer .footer-social .footer-media svg {
   color: #fff;
-  font-size: 25px;
+  width: 20px;
   margin-inline: 7px;
+}
+footer .footer-social .footer-media svg:hover,
+footer .footer-social .footer-media svg:active {
+  color: #c3c2c2;
 }
 footer .footer-nav {
   width: auto;
@@ -480,6 +612,11 @@ footer .footer-nav ul li a {
   text-decoration: none;
   font-size: 1rem;
 }
+footer .footer-nav ul li a:hover,
+footer .footer-nav ul li a:active {
+  text-decoration: underline;
+  color: #c3c2c2;
+}
 footer .footer-copy {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -496,8 +633,14 @@ footer .footer-copy a {
   color: #fff;
   text-decoration: none;
 }
-footer .footer-copy a i {
+footer .footer-copy a svg {
+  width: 15px;
   margin-left: 10px;
+}
+footer .footer-copy a:active,
+footer .footer-copy a:hover {
+  text-decoration: underline;
+  color: #c3c2c2;
 }
 footer .footer-copy p {
   text-align: center;

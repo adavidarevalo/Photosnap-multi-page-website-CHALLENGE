@@ -1,6 +1,12 @@
 @clr-black: #000;
 @clr-white: #fff;
 @clr-gray: #999;
+@font-face{
+  font-family: "DM Sans";
+  src: url("../assets/fonts/dm-sans-v6-latin-regular.woff2") format("woff2"),
+   url("../assets/fonts/dm-sans-v6-latin-regular.woff") format("woff");
+   font-style: normal;
+}
 .font {
   font-family: "DM Sans", sans-serif;
 }
@@ -15,6 +21,7 @@ header {
   display: flex;
   justify-content: space-between;
   margin-block: 20px;
+  animation:slideInDown 1s both;
   section {
     display: flex;
     color: @clr-black;
@@ -50,6 +57,11 @@ header {
           text-decoration: none;
           color: @clr-black;
         }
+        a:hover,
+        a:active{
+          text-decoration: underline;
+          color:rgb(195, 194, 194);
+        }
       }
     }
     hr {
@@ -67,8 +79,9 @@ header {
       margin: 0 auto;
       cursor: pointer;
     }
-    button:checked {
-      background: #999;
+    button:active,
+    button:hover{
+      background: rgb(216, 215, 215);
       color: @clr-black;
     }
   }
@@ -78,5 +91,13 @@ header {
 }
 
 
-
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 //https://nhhlan.github.io/photosnap/#
