@@ -1,3 +1,4 @@
+import "../utils/service";
 const home = ()=>{
   const view=`
   <section class="create">
@@ -71,26 +72,10 @@ const home = ()=>{
       </div>
     </section>
     <section class="info">
-      <div>
-        <img src="./assets/images/computer.svg" alt="Computer" loading="lazy">
-        <h3>100% Responsive</h3>
-        <p>No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen.
-        </p>
-      </div>
-      <div class="info-infinity">
-        <img src="./assets/images/infinity.svg" alt="Infinity" loading="lazy">
-        <h3>No Photo Upload Limit</h3>
-        <p>Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one
-          go.
-        </p>
-      </div>
-      <div>
-        <img src="./assets/images/social.svg" alt="Social Media" loading="lazy">
-        <h3>Available to Embed</h3>
-        <p>Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more.
-        </p>
-      </div>
-      <switch-option></switch-option>
+      <service-card img="./assets/images/computer.svg" title="100% Responsive" paragraph="No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen."></service-card>
+      <service-card class="info--noLimit" img="./assets/images/infinity.svg" title="No Photo Upload Limit" paragraph="Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one
+      go."></service-card>
+      <service-card img="./assets/images/social.svg" title="Available to Embed" paragraph="Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more."></service-card>
     </section>
   `
   return view;

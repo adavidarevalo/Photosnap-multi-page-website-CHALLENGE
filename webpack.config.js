@@ -25,20 +25,6 @@ module.exports = {
       test: /\.css$/,
       use:[MiniCssExtractPlugin.loader, "css-loader"]
     },
-    {
-      test: /\.(woff|| woff2)$/,
-      use:{
-        loader: "url-loader",
-        options: {
-          limit: 10000,
-          mimetype: "application/font-woff",
-          name: "[name].[ext]",
-          outputPath: "./assets/fonts/",
-          publicPath: "./assets/fonts/",
-          esModule: false
-        }
-      }
-    }
     ]
   },
   plugins: [

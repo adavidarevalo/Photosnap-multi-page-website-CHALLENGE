@@ -10,7 +10,7 @@ class service extends HTMLElement{
         const template = document.createElement("template")
         template.innerHTML=`
         <div>
-          <img src="${this.img}">
+          <img src="${this.img}" loading="lazy">
           <h2>${this.title}</h2>
           <p>${this.paragraph}</p>
         </div>
